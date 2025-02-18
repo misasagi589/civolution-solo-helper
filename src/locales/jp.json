@@ -1,0 +1,288 @@
+{
+  "gameTitle": "Civolution",
+  "home": {
+    "title": "Civolution Solo Helper",
+    "play1": "Play <a href='https://boardgamegeek.com/boardgame/400602/civolution' target='_blank' rel='noopener'><b>Civolution</b></a> against V.I.C.I, the artificial opponent.",
+    "play2": "このアプリケーションはソロカードデッキを置き換え、難易度を管理し、ゲームとソロルールセットをガイドします。",
+    "vici": {
+      "hello": "こんにちは,<br/>私は<br/>V.I.C.Iです",
+      "about": "｢シヴォリューション｣を1人でプレイしたいのでしたら、ライバル文明をシミュレートすることを目的とした自立式仮想文明存在であるV.I.C.Iをご紹介します。"
+    },
+    "feedback": "Discussion and Feedback:"
+  },
+  "setup": {
+    "title": "準備",
+    "difficultyLevel": {
+      "title": "難易度",
+      "easy": "イージー",
+      "hard": "ハード"
+    },
+    "scoringTiles": {
+      "title": "得点計算タイル",
+      "randomize": "ランダム化",
+      "select": "選択",
+      "available": "利用可能:",
+      "selected": "選択済み (3 x 最終 / 4 x 時代):",
+      "none": "(なし)"  
+    },
+    "randomMap": {
+      "title": "大陸",
+      "show": "ランダムな大陸 (オプション)",
+      "firstPlay": "最初のゲーム",
+      "randomize": "ランダム化"
+    }
+  },
+  "setupBot": {
+    "title": "V.I.C.Iのセットアップ",
+    "provisionMarker": "食料調達マーカー",
+    "placeDisks": "V.I.C.Iのプレイヤーカラーを選択し,そのカラーの<b>ディスク</b>7枚を取り、ゲームボード上にあるあなたの各ディスクの上に1枚ずつ置きます",
+    "takeTribesMarkers": "V.I.C.Iの色の<b>部族コマ</b>15個(残り5個は使いません)と<b>マーカー</b>50個をV.I.C.Iのプレイエリアに置いてサプライとします。",
+    "placeStartingTribes": "V.I.C.Iの部族コマを<i>森林初期領域</i>で空いている焚き火のない野営地に立てて置き、<i>草原初期領域</i>で空いている焚き火のない野営地に立てて置きます。",
+    "placeProvisionMarker": "この2つの初期領域内で、農場建設スペースの横にマーカーを1個<b>横倒し</b>で置きます。これらのマーカーは資材を表す物ではなく、<i>食料調達マーカー</i>と呼ばれます",
+    "takeDice": "<b>発動ダイス</b>6個と<b>運命ダイス</b>1個をV.I.C.Iのプレイエリアに置きます。",
+    "diceNotice": "このダイスは振るのではなく、V.I.C.Iのダイスの数を数えるために使用されます。",
+    "noOtherComponents": "V.I.C.I用には、他の内容物は使いません。"
+  },
+  "roundStart": {
+    "title": "時代の進行",
+    "newCards": {
+      "title": "1) 新たなカード",
+      "noAction": "V.I.C.Iは何もしません."
+    },
+    "newGoals": {
+      "title": "2) 新たな目標",
+      "playerTakeGoal": "目標チップを1枚得る(得なくても良い).",
+      "botDetermine": "V.I.C.Iの目標チップを選ぶ",
+      "botTakeGoal": "目標チップ<b>{goalChip}</b>を取り除きます (可能な場合).",
+      "botNoGoal": "目標チップは取り除かれません"
+    },
+    "extraFind": {
+      "title": "3) さらなる発見",
+      "noAction": "V.I.C.Iはさらなる発見を行いません。"
+    }
+  },
+  "turnPlayer": {
+    "title": "プレーヤー",
+    "takeTurn": "あなたの番です"
+  },
+  "turnBot": {
+    "title": "V.I.C.I",
+    "reset": "V.I.C.Iは<b>リセット</b>を実行します。",
+    "resetAdvance": "<i>フェイズマーカー</i>を次の<i>リセットスペース</i>に進めます。",
+    "removeAttributeChip": "<b>特性チップ</b>を取り除きます {chip}",
+    "removeIncomeChip": "<b>収入チップ</b>を取り除きます {chip}"
+  },
+  "roundEnd": {
+    "title": "アクションフェイズの終了",
+    "sitePhase": {
+      "title": "5) 場所フェイズ",
+      "botNotAffected": "V.I.C.Iはどの表向きの場所タイルの影響も受けません。"
+    },
+    "feedingPhase": {
+      "title": "6) 食料供給フェイズ",
+      "feedTribes": {
+        "title": "A)V.I.C.Iの食料調達アクション:",
+        "oneProvisioningMarker": "食料調達マーカーがちょうど1個ある各領域では,野営地にあるV.I.C.Iの部族駒のうち1個が食糧供給されます。 優先度:",
+        "twoProvisioningMarkers": "食料調達マーカーが最低2個ある各地域では,すべての部族駒と荒野にある追加の部族駒1個が食料供給されます(複数の駒があるなら屈強な駒が優先)",
+        "weakenTribes": "他のすべての部族駒を、この時点で脆弱化させます。"
+      },
+      "scoreStrongTribes": "B)V.I.C.Iは屈強な部族駒から通常通りに成功点を得ます。"
+    },
+    "eventPhase": {
+      "title": "7) イベントフェイズ",
+      "adjustWeather": "A) V.I.C.Iは天候の影響を受けません。",
+      "resolveEvent": {
+        "title": "B) V.I.C.Iはイベントのボーナスも獲得しません",
+        "compareBot": "しかし、優先や先行を必要とするイベントのボーナスを得られるかどうかを決めるとき、V.I.C.Iも考慮する必要がある。",
+        "eventsDetails": "イベント F4, F6, F16, F17, F19, F20",
+        "majorityModal": {
+          "title": "V.I.C.Iイベント優先判定",
+          "event": "イベント",
+          "achievement": "イベント優先判定"
+        }
+      },
+      "scoreCategory": "C) V.I.C.Iは得点計算カテゴリーから通常通り成功点を得ます。",
+      "startingCivilization": {
+        "title": "D) 新たなスタート文明を通常通りに決めます。",
+        "nextStartPlayer": "次のスタート文明:"
+      }
+    },
+    "incomePhase": {
+      "title": "8) 収入フェイズ",
+      "scoreStatues": "B) V.I.C.Iは彫像から成功点を得ます。"
+    },
+    "noNextStartPlayer": "次のスタートプレイヤーを決めてください"
+  },
+  "gameEnd": {
+    "title": "ゲームの終了",
+    "finalScoring": {
+      "title": "最終スコア",
+      "categories": " 9つの得点計算カテゴリーを獲得(あなたとV.I.C.I)",
+      "consoleStages": "コンソールのステージ区域の得点計算(あなただけ)",
+      "consoleResearchCards": "得点ボーナスを待つカードによる成功点(あなただけ)"
+    },
+    "winCondition": "V.I.C.Iより多くの成功点を得た場合、あなたが勝利します。<i>Civolution</i>の成功おめでとうございます!"
+  },
+  "endRoundButton": {
+    "title": "アクションフェイズ終了",
+    "confirm": "アクションフェーズを終了しますか？"
+  },
+  "sideBar": {
+    "round": "時代 {round}",
+    "cards": "カード:"
+  },
+  "rules": {
+    "action": {
+      "advanceFavor": {
+        "title": "アゲーラトラック",
+        "instruction": "アゲーラの好意トラック上でV.I.C.Iのディスクを(可能ならば)1スペース進めます。"
+      },
+      "advanceScoringCategory": {
+        "title": "発展トラック",
+        "instruction": "V.I.C.Iのディスクを示されているスペース数だけ進める。",
+        "threshold": "トラックボーナスとして成功点をもたらすボーナスラインを横切るたびに、V.I.C.Iはその成功点を得ます。その他のボーナスは無視します",
+        "exceedTrack": "V.I.C.Iのディスクがすでにスペース12いる場合,V.I.C.Iは代わりに2勝利点を得ます。"
+      },
+      "gainActivationDie": {
+        "title": "発動ダイス追加",
+        "instruction": "V.I.C.Iは(通常ルールに従って)発動ダイスを1個得ます、このダイスは振らず、単にV.I.C.Iの他のダイスに追加されます。"
+      },
+      "gainFateDie": {
+        "title": "運命ダイスの追加",
+        "instruction": ""V.I.C.Iは(通常ルールに従って)運命ダイスを1個得ます、このダイスはV.I.C.Iの他のダイスに追加されます。"
+      },
+      "gainVp": {
+        "title": "Success Points",
+        "instruction": "V.I.C.Iは示されている値の成功点を得ます。"
+      },
+      "performMigration": {
+        "title": "移住",
+        "initialTerritory": {
+          "title": "移動元の領域(領域X)",
+          "minimumRequirement": "V.I.C.Iが最低2個の部族駒を置いており,そのうち最低1個は屈強である領域があるか確認します。",
+          "twoTribesAvailability": "<b>注意:</b> そのような領土がない場合,まず繁殖を1回実行します。",
+          "performProcreation": "繁殖を行う",
+          "tribePriorityList": {
+            "title": "移動先の領域を選ぶ",
+            "wilderness": "荒野から",
+            "fireEncampment": "焚き火がある野営地から",
+            "anyEncampment": "任意の野営地から"
+          }
+        },
+        "destinationTerritory": {
+          "title": "移動先の領域(領域Y)",
+          "minimumRequirement": "領域Xに隣接している陸地を選ぶ。.",
+          "priorityRequirement": "<b>優先度</b>:V.I.C.Iの部族が最も少ない領土(なし = 最も少ない).",
+          "moveTribe": "決まった屈強な部族駒を領域Yに移動させ、そこにある野営地に置きます。(V.I.C.Iの部族は野営地から部族を追い出しても弱体化しません)",
+          "undevelopedTerritory": "部族が未開発の領土に入る場合、その部族の資源タイルを表向きにしますが、そこにマーカーを置きません"
+        }
+      },
+      "performProcreation": {
+        "title": "繁殖",
+        "minimumRequirement": "VICI の部族が少なくとも 1 つ存在する領土を選択します。",
+        "priorityRequirement": "<b>優先度</b>: 少なくとも 1 つの空き野営地がある領域。",
+        "territoryDetermined": "領土を決定したら、V.IC.I の供給から部族をその領土に追加し、野営地に定住させます",
+        "migrationCheck": "<b>重要</b>:V.I.C.Iのために実行した<b>すべての</b>領域内の<b>すべての</b>野営地がV.I.C.Iの部族駒<b>にのみ</b>占有されているか(つまり、空いている野営地もあなたの部族駒がある野営地もない)を確認してください,そうである場合は、すぐに1回の移住を追加で実行してください",
+        "performMigration": "移住を実行する"
+      },
+      "performProvision": {
+        "title": "食料調達",
+        "minimumRequirement": "V.I.C.Iの最低1つの部族がいる領域を1つ決めます。",
+        "priorityRequirement": "<b>優先順位</b>: 補給マーカーが最も少なく (0が最も少ない)、V.I.C.Iの部族が最も多い領土。",
+        "placeMarker": "領土内に補給マーカーを配置します。",
+        "blockFarmSpace": "領土に2つの供給マーカーが配置されると、農場の建物スペースがブロックされます (まだ空いている場合)。"
+      },
+      "placeEvolutionMarker": {
+        "title": "進化",
+        "instruction": "V.I.C.Iは進化マーカーを獲得します（これらはアプリケーションによって自動的にカウントされます）"
+      },
+      "placeHuntingToken": {
+        "title": "狩猟",
+        "minimumRequirement": "V.I.C.Iの最低1つの部族があり、狩猟トークンがまだ存在しない領土を選択します。",
+        "priorityRequirement": "<b>優先順位</b>:<b>あなた</b>のいる領域",
+        "placeToken": "領土内に狩猟トークンを配置します。"
+      },
+      "placeProsperityMarker": {
+        "title": "繁栄",
+        "instruction": "V.I.C.Iは繁栄マーカーを獲得します (これらはアプリケーションによって自動的にカウントされます)。"
+      },
+      "placeStatue": {
+        "title": "彫像",
+        "instruction": "V.I.C.Iの供給からマーカーを像として、大きな水域の建物の地面に置きます",
+        "unlimited": "V.I.C.Iが設置できる彫像の数に制限はありません"
+      },
+      "removeCard": {
+        "title": "研究カードを取り除く",
+        "instruction": "示された種類の<i>表向きの研究山</i>から一番上のカードを取り除きます。",
+        "refill": "その後、表向きの山が空になった場合は、通常どおり補充します。"
+      },
+      "revealSites": {
+        "title": "探検",
+        "minimumRequirement": "V.I.C.Iの最低1つの部族がいる領土を選択します",
+        "priorityRequirement": "<b>優先順位</b>:最も多く裏向きになっている場所タイルに隣接する領土。",
+        "reveal": "領土に隣接する裏向きの場所タイルをすべて公開します",
+        "gainVP": "V.I.C.Iは公開された各場所タイルの前面に印刷されている成功ポイントを獲得します。これに加えて、V.I.C.Iの文明は表向きの場所タイルによる影響を受けません"
+      }
+    },
+    "priority": {
+      "encampment": {
+        "freeFire": "空いている焚き火がある野営地",
+        "freeAny": "任意の空いている野営地",
+        "playerFire": "<b>あなたの</b>部族が置かれている、焚き火がある野営地",
+        "playerWeakAny": "<b>あなたの</b>脆弱な部族が置かれていている任意の野営地",
+        "playerStrongAny": "<b>あなたの</b>屈強な部族が置かれていている任意の野営地",
+        "botStrongFire": "V.I.C.Iの屈強な部族が置かれていて、焚き火がある野営地",
+        "botStrongAny": "V.I.C.Iの屈強な部族が置かれている任意の野営地",
+        "botWeakFire": "V.I.C.Iの脆弱な部族が置かれていて、焚き火がある野営地",
+        "botWeakAny": "V.I.C.Iの脆弱な部族が置かれている任意の野営地",
+        "notWeakened": "<b>注意:</b>野営地から部族を追い出してもV.I.C.Iの部族駒は弱体化<b>しません</b>"
+      }
+    }
+  },
+  "difficultyLevel": {
+    "1": "Level 1 - 初心者レベル",
+    "2": "Level 2 - 並レベル",
+    "3": "Level 3 - 中級者レベル",
+    "4": "Level 4 - 上級者レベル",
+    "5": "Level 5 - 専門家レベル"
+  },
+  "player": {
+    "player": "プレイヤー",
+    "bot": "V.I.C.I"
+  },
+  "territory": {
+    "forest": "森林",
+    "grassland": "草原",
+    "hills": "丘陵",
+    "swamp": "沼地",
+    "mountains": "山岳",
+    "desert": "砂漠",
+    "water": "水域"
+  },
+  "notfound": {
+    "title": "見つかりません"
+  },
+  "action": {
+    "playGame": "Play Game",
+    "startGame": "Start Game",
+    "next": "Next",
+    "nextRound": "Next Round",
+    "abortGame": "ゲームを中止",
+    "abortGameConfirm": "実行中のゲームを中止します - よろしいですか?",
+    "endGame": "End Game",
+    "endGameConfirm": "このゲームを終了してホーム画面に戻ります。よろしいですか?",
+    "cancel": "Cancel",
+    "backToHome": "Back to Home",
+    "back": "Back",
+    "close": "Close",
+    "ok": "OK",
+    "reset": "Reset"
+  },
+  "footer": {
+    "credits": "Credits"
+  },
+  "serviceWorkerUpdatedRefresh": {
+    "title": "Refresh Application",
+    "notice": "The application was updated - do you want to refresh to use the latest version?"
+  }
+}
